@@ -16,7 +16,7 @@
 //!
 //! Neural network library for Rust.
 //!
-//! For examples, see [examples](https://github.com/teratron/rustunumic/examples).
+//! For examples, see [examples](https://github.com/cronusio/rustunumic/examples).
 
 // Reexported crates.
 pub use activation::Activation;

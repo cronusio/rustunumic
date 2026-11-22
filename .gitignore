@@ -217,20 +217,26 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Dotenv template
+# Environment & Secrets
 .env*
-.flaskenv*
-!.env.project
-!.env.vault
 !.env.example
 
-### Spec Kit
-.github/prompts/
-.codex/prompts/
-.claude/commands/
-.gemini/commands/
-.cursor/commands/
-.qwen/commands/
-.kilocode/workflows/
-#.specify/scripts/
-#.specify/templates/
+# MCP client config: paths are machine-specific, never commit the real file
+.mcp.json
+!.mcp.json.example
+
+# Skills: the project's own (treaker-*) are shared, any other skill of an agent folder stays local.
+# The contents are ignored, not the folder: git cannot take a file back out of a folder that is ignored as a whole, so
+# "/.*/skills/" with "!/.*/skills/treaker-*/" under it never worked.
+/.*/skills/*
+!/.*/skills/rustunumic-*/
+
+# SDD engine
+/.magic/
+/.*/skills/magic-*/
+/.*/*/magic*.md
+
+# SDD generated artifacts, rebuilt on demand by the engine (the rest of .design/ is shared)
+/.design/*graph*.*
+/.design/*cache*/
+/.design/wiki/

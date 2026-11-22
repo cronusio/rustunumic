@@ -88,7 +88,7 @@ Minimum (sufficient) limit of the average of the error during training.
 
 Learning coefficient (greater than 0.0 and less than or equal to 1.0).
 
-More documentation is available at the [rustunumic website](https://teratron.github.io/rustunumic).
+More documentation is available at the [rustunumic website](https://cronusio.github.io/rustunumic).
 
 ## Examples
 
@@ -116,6 +116,6 @@ You can find examples of neural networks in the [example's directory](examples).
 
 _Project at the initial stage._
 
-See the latest [commits](https://github.com/teratron/rustunumic/commits/master).
+See the latest [commits](https://github.com/cronusio/rustunumic/commits/master).
 
 ---
